@@ -39,7 +39,7 @@ def generate():
     token = random.choice(token_list)
     if token == "U":
         token_name = "Unicorn Token"
-        prize = 5
+        prize = 3
     elif token == "Z":
         token_name = "Zebra Token"
         prize = 0.5
@@ -67,3 +67,13 @@ balance -= 1
 
 balance += generate()
 print(f"You now have ${balance}")
+rounds = 1
+while balance > 0:
+    if yes_no("Do you want to play again?"):
+        balance -= 1
+        balance += generate()
+        rounds += 1
+        print(f"You now have ${balance}")
+    else:
+        print(f"You finished with a balance of ${balance} after {rounds} rounds.")
+print(f"You ran out of money after {rounds} rounds")
