@@ -1,6 +1,6 @@
 """
-Lucky Unicorn Version 4 (Component 3 - Token Generation)
-Generates token
+Lucky Unicorn Version 5 (Component 4 - Balance Calculation)
+Calculates balance
 By Daniel Wu
 """
 import random
