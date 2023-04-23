@@ -4,7 +4,9 @@ Calculates payout
 By Daniel Wu
 """
 import random
+
 balance = 10
+
 
 # Yes/No Checker
 def yes_no(question):
@@ -63,4 +65,5 @@ if not yes_no("Confirm the payment of $1?"):
 
 balance -= 1
 
-generate()
+balance += generate()
+print(f"You now have ${balance}")
