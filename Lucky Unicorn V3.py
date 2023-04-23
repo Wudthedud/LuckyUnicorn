@@ -1,6 +1,6 @@
 """
-Lucky Unicorn Version 2
-Yes/No Checker
+Lucky Unicorn Version 3
+Welcome Screen
 By Daniel Wu
 """
 
@@ -30,5 +30,5 @@ def instructions():
 
 
 # Main Code
-instructions()
+
 yes_no("Have you played this game before")

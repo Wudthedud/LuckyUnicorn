@@ -1,10 +1,11 @@
 """
 Lucky Unicorn Version 1
-Welcome Screen
+Instructions
 By Daniel Wu
 """
 
 
+# Instructions
 def instructions():
     print("============ Welcome to Lucky Unicorn ============= \n"
           "Price per round: $1 \n"
@@ -16,4 +17,5 @@ def instructions():
           "===================================================")
 
 
+# Main Code
 instructions()
