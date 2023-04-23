@@ -1,5 +1,5 @@
 """
-Lucky Unicorn Version 2
+Lucky Unicorn Version 2 (Component 1 - Welcome Screen and Variables)
 Yes/No Checker
 By Daniel Wu
 """

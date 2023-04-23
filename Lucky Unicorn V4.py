@@ -1,7 +1,6 @@
 """
-Lucky Unicorn Version 3 (Component 1 - Welcome Screen and Variables)
-Welcome Screen and Confirmation, asks if user has played before and if yes continues and if no shows them the
-instructions
+Lucky Unicorn Version 4 (Component 2 - Payment and Confirmation)
+Asks if user confirms the payment of $1 if yes continue if no exit program
 By Daniel Wu
 """
 
@@ -32,6 +31,13 @@ def instructions():
 
 # Main Code
 if yes_no("Have you played this game before"):
-    print("Continue")
+    pass
 else:
     instructions()
+
+
+if not yes_no("Confirm the payment of $1?"):
+    print("Exit program")
+
+print("Generate Token")
+

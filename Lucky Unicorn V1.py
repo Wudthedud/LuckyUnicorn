@@ -1,5 +1,5 @@
 """
-Lucky Unicorn Version 1
+Lucky Unicorn Version 1 (Component 1 - Welcome Screen and Variables)
 Instructions
 By Daniel Wu
 """
