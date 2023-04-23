@@ -7,11 +7,12 @@ By Daniel Wu
 
 def instructions():
     print("============ Welcome to Lucky Unicorn ============= \n"
+          "Price per round: $1 \n"
           "\t Payout Rewards: \n"
-          "\t Unicorn: 3x Payment \n"
-          "\t Zebra: 1/2 of Payment \n"
-          "\t Horse: 1/2 of Payment \n"
-          "\t Donkey: Nothing \n"
+          "\t Unicorn: $5 \n"
+          "\t Zebra: $0.5 \n"
+          "\t Horse: $0.5 \n"
+          "\t Donkey: $0 \n"
           "===================================================")
 
 
