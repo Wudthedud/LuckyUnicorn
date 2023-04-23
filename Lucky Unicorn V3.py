@@ -1,6 +1,7 @@
 """
 Lucky Unicorn Version 3
-Welcome Screen and Confirmation
+Welcome Screen and Confirmation, asks if user has played before and if yes continues and if no shows them the
+instructions
 By Daniel Wu
 """
 
