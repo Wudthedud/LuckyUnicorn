@@ -1,6 +1,6 @@
 """
 Lucky Unicorn Version 3
-Welcome Screen
+Welcome Screen and Confirmation
 By Daniel Wu
 """
 
@@ -30,5 +30,7 @@ def instructions():
 
 
 # Main Code
-
-yes_no("Have you played this game before")
+if yes_no("Have you played this game before"):
+    print("Continue")
+else:
+    instructions()
