@@ -12,7 +12,8 @@ def yes_no(question):
             return True
         elif answer == "no" or answer == "n":
             return False
-
+        else:
+            print("Invalid input. Please enter 'yes' or 'no'")
 
 def instructions():
     print("============ Welcome to Lucky Unicorn ============= \n"
@@ -26,3 +27,4 @@ def instructions():
 
 
 instructions()
+yes_no("Have you played this game before")
