@@ -11,4 +11,4 @@ def number_checker():
             print("Invalid input. Please enter a valid number.")
 
 
-print(number_checker())
+print("You are playing with $" + str(number_checker()))
