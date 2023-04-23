@@ -1,7 +1,9 @@
 """
-Lucky Unicorn Final Version
+Lucky Unicorn Final Version.
+
 By Daniel Wu
 """
+
 import random
 starting_balance = 10
 balance = starting_balance
@@ -9,6 +11,7 @@ balance = starting_balance
 
 # Yes/No Checker
 def yes_no(question):
+    """Check whether the answer to a question is yes/no."""
     while True:
         answer = input(question + " (Y/N): \n").strip().lower()
         if answer == "yes" or answer == "y":
@@ -21,19 +24,22 @@ def yes_no(question):
 
 # Instructions
 def instructions():
+    """Display information about the game for the user."""
     print("============ Welcome to Lucky Unicorn ============= \n"
           "Price per round: $1 \n"
           "\t Payout Rewards: \n"
-          "\t Unicorn: $5 \n"
-          "\t Zebra: $0.5 \n"
-          "\t Horse: $0.5 \n"
-          "\t Donkey: $0 \n"
-          "Try to avoid donkeys, get the unicorns, and finish with more money than you started with. \n"
+          "\t Unicorn: 3x your bet \n"
+          "\t Zebra: 1/2 your bet \n"
+          "\t Horse: 1/2 your bet \n"
+          "\t Donkey: Nothing :( \n"
+          "Try to avoid donkeys, get the unicorns, and finish with "
+          "more money than you started with. \n"
           "===================================================")
 
 
 # Number checker
 def number_checker():
+    """Check whether the input is a number between selected values."""
     while True:
         num = input("Please enter how much you want to bet: ")
         try:
@@ -42,13 +48,15 @@ def number_checker():
                 print("You are playing with $" + str(num))
                 return num
             else:
-                print("The number is not between 1 and 10, or is larger than your current balance. Please try again.")
+                print("The number is not between 1 and 10, or is larger "
+                      "than your current balance. Please try again.")
         except ValueError:
             print("Invalid input. Please enter a valid number.")
 
 
 # Token generator
 def generate():
+    """Generate the token and links to price."""
     token_list = ["U", "Z", "H", "D"]
 
     token = random.choice(token_list)
@@ -70,6 +78,7 @@ def generate():
 
 # Farewell Message
 def farewell():
+    """Display Farewell message and summary of their game."""
     print("============ Thanks for playing ============= \n"
           f"\t You started with ${starting_balance} \n"
           f"\t You finished with ${balance} \n"
@@ -79,7 +88,8 @@ def farewell():
 
 # Main Code
 
-# Welcome screen, asking if they have played before and if no, showing them the payout amount and other information
+# Welcome screen, asking if they have played before and if no
+# showing them the payout amount and other information
 if yes_no("Have you played this game before?"):
     pass
 else:
@@ -107,7 +117,8 @@ while balance >= 1:
         rounds += 1
         print(f"You now have ${balance}")
     else:
-        print(f"You finished with a balance of ${balance} after {rounds} rounds.")
+        print(f"You finished with a balance of"
+              f" ${balance} after {rounds} rounds.")
         farewell()
         exit()
 
