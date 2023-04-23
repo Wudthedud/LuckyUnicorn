@@ -3,8 +3,8 @@ Lucky Unicorn Final Version
 By Daniel Wu
 """
 import random
-
-balance = 10
+starting_balance = 10
+balance = starting_balance
 
 
 # Yes/No Checker
@@ -71,8 +71,8 @@ def generate():
 # Farewell Message
 def farewell():
     print("============ Thanks for playing ============= \n"
-          "\t You started with $10 \n"
-          f"\t You finished with {balance} \n"
+          f"\t You started with ${starting_balance} \n"
+          f"\t You finished with ${balance} \n"
           "Goodbye \n"
           "=============================================")
 
