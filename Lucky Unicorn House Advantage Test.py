@@ -68,10 +68,10 @@ def generate():
 
 
 # Main Code
-balance = 100
+balance = 10
 rounds = 0
-while balance > 0:
-    amount = 5
+while rounds < 100:
+    amount = 2
     balance -= amount
     balance += generate() * amount
     rounds += 1
