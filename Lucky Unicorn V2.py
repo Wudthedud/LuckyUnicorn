@@ -7,7 +7,7 @@ By Daniel Wu
 
 def yes_no(question):
     while True:
-        answer = input(question + "(Y/N")
+        answer = input(question + "(Y/N").strip().lower()
         if answer == "yes":
             return True
         elif answer == "no":
