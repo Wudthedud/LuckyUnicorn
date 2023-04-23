@@ -1,10 +1,10 @@
 """
 Lucky Unicorn Version 4 (Component 3 - Token Generation)
-Generates token and calculates payout
+Calculates payout
 By Daniel Wu
 """
 import random
-
+balance = 10
 
 # Yes/No Checker
 def yes_no(question):
@@ -47,7 +47,7 @@ def generate():
     else:
         token_name = "Donkey Token"
         prize = 0
-    print(f"You got a {token_name}!")
+    print(f"You got a {token_name}, that means you get ${prize}")
     return prize
 
 
@@ -60,5 +60,7 @@ else:
 if not yes_no("Confirm the payment of $1?"):
     print("Exit program")
     exit()
+
+balance -= 1
 
 generate()

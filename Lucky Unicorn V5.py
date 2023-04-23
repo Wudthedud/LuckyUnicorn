@@ -1,6 +1,6 @@
 """
 Lucky Unicorn Version 4 (Component 3 - Token Generation)
-Generates token and calculates payout
+Generates token
 By Daniel Wu
 """
 import random
