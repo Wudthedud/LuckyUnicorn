@@ -23,4 +23,5 @@ def generate():
     return prize
 
 
-print(generate())
+
+print("Payout: $" + str(generate()))
