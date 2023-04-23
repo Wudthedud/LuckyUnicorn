@@ -9,4 +9,4 @@ def yes_no(question):
             print("Invalid input. Please enter 'yes' or 'no'")
 
 
-yes_no("Have you played this game before")
+print(yes_no("Have you played this game before"))

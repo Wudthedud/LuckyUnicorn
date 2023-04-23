@@ -6,4 +6,4 @@ def yes_no(question):
         return False
 
 
-yes_no("Have you played this game before")
+print(yes_no("Have you played this game before"))
