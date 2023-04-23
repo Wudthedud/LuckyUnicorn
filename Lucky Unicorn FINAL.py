@@ -3,6 +3,7 @@ Lucky Unicorn Final Version
 By Daniel Wu
 """
 import random
+
 balance = 10
 
 
@@ -37,7 +38,7 @@ def number_checker():
         num = input("Please enter how much you want to bet: ")
         try:
             num = int(num)
-            if 1 <= num <= 10 and num <= balance:
+            if 1 <= num <= balance:
                 print("You are playing with $" + str(num))
                 return num
             else:
@@ -67,23 +68,38 @@ def generate():
     return prize
 
 
+# Farewell Message
+def farewell():
+    print("============ Thanks for playing ============= \n"
+          "\t You started with $10 \n"
+          f"\t You finished with {balance} \n"
+          "Goodbye \n"
+          "=============================================")
+
+
 # Main Code
+
+# Welcome screen, asking if they have played before and if no, showing them the payout amount and other information
 if yes_no("Have you played this game before?"):
     pass
 else:
     instructions()
 
+# This is where the user gets to pick how much they want to bet
 amount = number_checker()
 
+# Confirming that amount
 if not yes_no(f"Confirm the payment of ${amount}?"):
     print("Quitting the game...")
+    farewell()
     exit()
 
+# Calculating the balance
 balance -= amount
 balance += generate() * amount
 print(f"You now have ${balance}")
 rounds = 1
-while balance > 0:
+while balance >= 1:
     if yes_no("Do you want to play again? \n"):
         amount = number_checker()
         balance -= amount
@@ -92,5 +108,9 @@ while balance > 0:
         print(f"You now have ${balance}")
     else:
         print(f"You finished with a balance of ${balance} after {rounds} rounds.")
+        farewell()
         exit()
+
+# Round calculation
 print(f"You ran out of money after {rounds} rounds")
+farewell()
