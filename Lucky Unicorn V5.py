@@ -52,13 +52,14 @@ def generate():
 
 
 # Main Code
-if yes_no("Have you played this game before"):
-    pass
-else:
+if not yes_no("Have you played this game before"):
     instructions()
-
-if not yes_no("Confirm the payment of $1?"):
-    print("Exit program")
-    exit()
+    if not yes_no("Confirm the payment of $1?"):
+        print("Exit program")
+        exit()
+else:
+    if not yes_no("Confirm the payment of $1?"):
+        print("Exit program")
+        exit()
 
 generate()

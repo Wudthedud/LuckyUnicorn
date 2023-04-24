@@ -36,16 +36,16 @@ def instructions():
 # Number checker
 def number_checker():
     while True:
-        num = input("Please enter how much you want to bet: ")
+        num = input("Please enter how much you want to bet: \n")
         try:
             num = int(num)
             if 1 <= num <= 10 and num <= balance:
                 print("You are playing with $" + str(num))
                 return num
             else:
-                print("The number is not between 1 and 10, or is larger than your current balance. Please try again.")
+                print("The number is not between 1 and 10, or is larger than your current balance. Please try again. \n")
         except ValueError:
-            print("Invalid input. Please enter a valid number.")
+            print("Invalid input. Please enter a valid number. \n")
 
 
 # Token generator
