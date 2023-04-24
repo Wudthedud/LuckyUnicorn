@@ -27,6 +27,7 @@ def instructions():
           "\t Zebra: $0.5 \n"
           "\t Horse: $0.5 \n"
           "\t Donkey: $0 \n"
+          "Try to avoid donkeys, get the unicorns, and finish with more money than you started with. \n"
           "===================================================")
 
 
