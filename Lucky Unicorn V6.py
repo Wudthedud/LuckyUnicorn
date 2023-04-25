@@ -66,14 +66,14 @@ if not yes_no("Confirm the payment of $1?"):
 balance -= 1
 
 balance += generate()
-print(f"You now have ${balance}")
+print(f"Your remaining balance is: ${balance}")
 rounds = 1
 while balance > 0:
     if yes_no("Do you want to play again?"):
         balance -= 1
         balance += generate()
         rounds += 1
-        print(f"You now have ${balance}")
+        print(f"Your remaining balance is: ${balance}")
     else:
         print(f"You finished with a balance of ${balance} after {rounds} rounds.")
         exit()

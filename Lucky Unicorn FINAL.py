@@ -41,7 +41,7 @@ def instructions():
 def number_checker():
     """Check whether the input is a number between selected values."""
     while True:
-        num = input("Please enter how much you want to bet: \n")
+        num = input("Please enter how much you want to bet: \n$")
         try:
             num = int(num)
             if 1 <= num <= balance:
@@ -107,7 +107,7 @@ if not yes_no(f"Confirm the payment of ${amount}?"):
 # Calculating the balance
 balance -= amount
 balance += generate() * amount
-print(f"You now have ${balance}")
+print(f"Your remaining balance is: ${balance}")
 rounds = 1
 while balance >= 1:
     if yes_no("Do you want to play again? \n"):
@@ -115,7 +115,7 @@ while balance >= 1:
         balance -= amount
         balance += generate() * amount
         rounds += 1
-        print(f"You now have ${balance}")
+        print(f"Your remaining balance is: ${balance}")
     else:
         print(f"You finished with a balance of"
               f" ${balance} after {rounds} rounds.")

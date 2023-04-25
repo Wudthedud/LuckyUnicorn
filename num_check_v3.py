@@ -1,6 +1,6 @@
 def number_checker():
     while True:
-        num = input("Please enter a number between 1 and 10: \n")
+        num = input("Please enter a number between 1 and 10: \n$")
         try:
             num = int(num)
             if 1 <= num <= 10:
